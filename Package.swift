@@ -16,7 +16,7 @@ let package = Package(
             name: "ogg",
             dependencies: [],
             path: ".",
-            sources: ["include/**/*.h", "src"]),
+            sources: ["include/**/*.h", "src/bitwise.c", "src/framing.c", "src/crctable.h"]),
         .testTarget(
             name: "oggTests",
             dependencies: ["ogg"]),
