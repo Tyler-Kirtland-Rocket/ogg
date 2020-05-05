@@ -16,7 +16,7 @@ let package = Package(
             name: "ogg",
             dependencies: [],
             path: ".",
-            sources: ["include", "src"]),
+            sources: ["include", "src", "Makefile.am"]),
         .testTarget(
             name: "oggTests",
             dependencies: ["ogg"]),
