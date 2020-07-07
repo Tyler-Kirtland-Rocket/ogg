@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version      = ver
   s.summary      = "Low-level media demuxer/muxer library"
 
-  s.platforms    = { :ios => "12.0", :osx => "10.15" }
+  s.platforms    = { :ios => "12.0", :macos => "10.15" }
 
   s.description  = <<-DESC
                    Xiph's C-based Ogg media stream demuxer/muxer library, packaged for iOS.
