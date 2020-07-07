@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.version      = ver
   s.summary      = "Low-level media demuxer/muxer library"
 
-  s.platforms    = { :ios => "12.0", :macos => "10.15" }
+  s.ios.deployment_target  = '12.0'
+  s.osx.deployment_target  = '10.15'
 
   s.description  = <<-DESC
                    Xiph's C-based Ogg media stream demuxer/muxer library, packaged for iOS.
@@ -20,9 +21,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Tyler Kirtland" => "tdkirtland@gmail.com" }
   s.social_media_url   = "https://planet.xiph.org/"
-
-  s.platform     = :ios, "12.0"
-
+  
   s.source = { :git => "https://github.com/Tyler-Kirtland-Rocket/ogg.git", :tag => "v" + ver }
   s.prepare_command = <<-'CMD'
                       echo 'framework module ogg {' > ogg.modulemap
